@@ -1,0 +1,251 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.company-name {
+  font-size: 30px;
+  color: orange;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #222;
+  color: #fff;
+  width: 250px;
+  height: 100vh;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sidebar-links .dropdown-content {
+  position: static;
+  display: none;
+}
+
+.sidebar-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+
+.login-container, .signup-container, .signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style forms */
+form {
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Add some spacing between form elements */
+form > * {
+  margin-bottom: 10px;
+}
+/* styles.css */
+
+/* ... (CSS lainnya) ... */
+
+/* Style gallery */
+.container_galery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container_klien {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container_produk {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+.client-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.client {
+  text-align: center;
+}
+
+.client img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.client h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.client p {
+  font-size: 16px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.about-content {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+

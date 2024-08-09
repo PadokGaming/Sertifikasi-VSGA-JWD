@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HarleyClub.co.id</title>
+</head>
+<body>
+  <div class="header">
+    <div class="company-name" style=" ">Harley Club</div>
+
+    <nav class="navbar">
+      <div class="logo"><img src="harley-davidson-logo.jpg" alt="Harley Logo">
+        <li class="nav-links" style=" padding-left: 30px;"><a href="home.html">Home</a></li></div>
+      <ul class="nav-links">
+         
+        <li style="padding-top: 50px;"><a href="profile.html">Profile</a></li>
+        <li style="padding-top: 50px;"><a href="visi-misi.html">Visi dan Misi</a></li>
+        <li style="padding-top: 50px;"><a href="produk.html">Produk Kami</a></li>
+        <li style="padding-top: 50px;"><a href="kontak.html">Kontak Kami</a></li>
+        <li style="padding-top: 50px;"><a href="about.html">About Us</a></li>
+        <li class="dropdown" style="padding-top: 50px;">
+          <a href="login.php">Login</a>
+          <div class="dropdown-content">
+            <a href="signin.php">Sign In</a>
+            <a href="signup.php">Sign Up</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <ul class="sidebar-links">
+   
+        <li><a href="artikel.html">Artikel</a></li>
+        <li class="dropdown">
+          <a href="event1.html">Event</a>
+          <div class="dropdown-content">
+            <a href="event1.html">Event 1</a>
+            <a href="event2.html">Event 2</a>
+            <a href="event3.html">Event 3</a>
+          </div>
+        </li>
+        <li><a href="galery.html">Galery Foto</a></li>
+        <li><a href="klien.html">Klien Kami</a></li>
+        <li class="dropdown">
+          <a href="login.php">Login</a>
+          <div class="dropdown-content">
+            <a href="signin.php">Sign In</a>
+            <a href="signup.php">Sign Up</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <main class="content" id="content">
+      <h1>Selamat Datang di Website Kami</h1>
+      <br>
+      <br>
+      <p>Kami mengundang semua pecinta motor Harley Davidson untuk bergabung dengan kami dan merasakan ikatan yang kuat dalam komunitas kami. Semua orang dengan cinta terhadap motor klasik ini diterima dengan tangan terbuka di Harley Club .</p>
+      <br>
+      <br>
+      <p> Silahkan Daftar Atau Login Dahulu Yaa </p>
+    </main>
+  </div>
+
+  <script>
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sidebarLinks = document.querySelectorAll('.sidebar-links a');
+    const contentDiv = document.getElementById('content');
+
+    function loadContent(url) {
+      const objectTag = `<object data="${url}" width="100%" height="100%"></object>`;
+      contentDiv.innerHTML = objectTag;
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        loadContent(link.getAttribute('href'));
+      });
+    });
+
+    sidebarLinks.forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        loadContent(link.getAttribute('href'));
+      });
+    });
+  </script>
+</body>
+</html>
